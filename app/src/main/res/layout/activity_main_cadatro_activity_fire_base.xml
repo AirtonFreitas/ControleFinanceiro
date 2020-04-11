@@ -13,70 +13,36 @@
         android:id="@+id/TextViewCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-    <TextView
-        android:text="Nome"
-        android:textSize="15dp"
-        android:id="@+id/TextViewNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nomeIDfb"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginBottom="34dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/person"
         android:id="@+id/nomeIDfb"
-        android:layout_marginTop="27dp"
         android:textColor="#949494"
-        android:layout_below="@+id/TextViewCadastro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:hint="Nome"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/email"
         android:id="@+id/emailIDfb"
         android:textColor="#949494"
-        android:layout_below="@+id/TextViewNome"
-        android:layout_alignRight="@+id/senhaConIDfb"
-        android:layout_alignEnd="@+id/senhaConIDfb" />
-    <TextView
-        android:text="Email"
-        android:textSize="15dp"
-        android:id="@+id/TextViewEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/emailIDfb"
-        android:layout_alignRight="@+id/TextViewNome"
-        android:layout_alignEnd="@+id/TextViewNome"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_alignRight="@+id/cadastrarIDfb"
+        android:layout_alignEnd="@+id/cadastrarIDfb"
+        android:layout_below="@+id/nomeIDfb"
+        android:hint="E-mail" />
 
-    <TextView
-        android:text="Senha"
-        android:textSize="15dp"
-        android:id="@+id/TextViewSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/senhaIDfb"
-        android:layout_alignLeft="@+id/TextViewEmail"
-        android:layout_alignStart="@+id/TextViewEmail"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:text="Confirmação de senha"
-        android:textSize="15dp"
-        android:id="@+id/TextViewConSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/senhaConIDfb"
-        android:layout_alignLeft="@+id/TextViewSenha"
-        android:layout_alignStart="@+id/TextViewSenha"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
     <Button
         android:text="Cadastrar"
         android:textSize="20dp"
@@ -85,7 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false" />
+        android:layout_alignParentEnd="false"
+        android:textColor="#ffffff"
+        android:background="#52bce6" />
 
     <Button
         android:text="Voltar"
@@ -95,29 +63,47 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#ffffff" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/senhaIDfb"
-        android:layout_centerVertical="true"
+        android:hint="Senha"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/emailIDfb"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/senhaConIDfb"
         android:layout_alignEnd="@+id/senhaConIDfb" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/senhaConIDfb"
-        android:layout_below="@+id/TextViewSenha"
-        android:layout_alignRight="@+id/cadastrarIDfb"
-        android:layout_alignEnd="@+id/cadastrarIDfb"
+        android:hint="Confirme sua senha"
+        android:layout_below="@+id/senhaIDfb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/voltarIDfb"
+        android:layout_alignEnd="@+id/voltarIDfb" />
 </RelativeLayout>

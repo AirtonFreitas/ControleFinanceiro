@@ -13,57 +13,37 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Senha:"
-        android:id="@+id/senhaID"
-        android:layout_gravity="center_vertical"
-        android:layout_below="@+id/emailcxID"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="E-mail:"
-        android:id="@+id/emailID"
-        android:layout_gravity="center_vertical"
-        android:layout_above="@+id/emailcxID"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="14dp"
+        android:text="Controle Financeiro"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Controle Financeiro" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/person"
         android:id="@+id/emailcxID"
-        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:hint="E-mail"
+        android:layout_below="@+id/imageView" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/senhacxID"
-        android:layout_below="@+id/senhaID"
+        android:textSize="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/emailcxID"
-        android:layout_alignEnd="@+id/emailcxID"
-        android:textSize="25dp" />
+        android:layout_below="@+id/emailcxID"
+        android:hint="Senha" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -72,22 +52,53 @@
         android:id="@+id/switch1"
         android:checked="false"
         android:layout_below="@+id/senhacxID"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
 
     <Button
-        android:layout_width="80dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Entrar"
         android:id="@+id/botaoEntrarID"
+        android:background="#52bce6"
+        android:textColor="#ffffff"
+        android:layout_marginTop="23dp"
         android:layout_below="@+id/switch1"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Novo Cadastro"
         android:id="@+id/botaoNovoCadID"
-        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:allowUndo="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Esqueci minha senha"
+        android:id="@+id/textView3"
+        android:textSize="10dp"
+        android:layout_below="@+id/botaoEntrarID"
+        android:layout_alignRight="@+id/botaoEntrarID"
+        android:layout_alignEnd="@+id/botaoEntrarID"
+        android:layout_marginTop="23dp" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/logo"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

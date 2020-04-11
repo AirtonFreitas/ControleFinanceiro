@@ -7,23 +7,25 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.financeiro.controle.admin.controlefinanceiro.Main2Activity">
+    tools:context=".SplashActivity"
+    android:background="#dddddd">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VOLTAR"
-        android:id="@+id/botaoVoltar"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <CalendarView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/calendarView"
-        android:layout_centerVertical="true"
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/logo"
+        android:layout_marginTop="121dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Controle Financeiro"
+        android:id="@+id/textView4"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
