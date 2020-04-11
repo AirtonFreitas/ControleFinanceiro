@@ -8,6 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="despesasTema" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimaryDespesa</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDespesa</item>
+        <item name="colorAccent">@color/colorAccentDespesa</item>
+    </style>
+
+    <style name="receitaTema" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimaryReceita</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkReceita</item>
+        <item name="colorAccent">@color/colorAccentReceita</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
 
 
