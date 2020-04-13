@@ -1,2 +1,2 @@
 # ControleFinanceiro
-Tela de Login  e Cadastro de Usuário. Usando o Firebase para Autenticação e cadastro.
+Para testarem, basta baixar o arquivo Aplicativo Controle Financeiro.apk
