@@ -7,17 +7,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity.MainCadatroActivityFireBase">
+    tools:context=".activity.MainCadastroActivityFireBase">
     <TextView
         android:text="Novo Cadastro"
         android:id="@+id/TextViewCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="36dp"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_toRightOf="@+id/imageView2"
         android:layout_toEndOf="@+id/imageView2"
-        android:layout_marginBottom="34dp" />
+        android:layout_marginLeft="10dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -38,34 +39,36 @@
         android:drawableLeft="@drawable/email"
         android:id="@+id/emailIDfb"
         android:textColor="#949494"
-        android:layout_alignRight="@+id/cadastrarIDfb"
-        android:layout_alignEnd="@+id/cadastrarIDfb"
         android:layout_below="@+id/nomeIDfb"
-        android:hint="E-mail" />
+        android:hint="E-mail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:text="Cadastrar"
         android:textSize="20dp"
         android:id="@+id/cadastrarIDfb"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
         android:textColor="#ffffff"
-        android:background="#52bce6" />
+        android:background="#52bce6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Voltar"
         android:textSize="20dp"
         android:id="@+id/voltarIDfb"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textColor="@color/colorPrimaryDark"
-        android:background="#ffffff" />
+        android:background="#ffffff"
+        android:layout_above="@+id/cadastrarIDfb"
+        android:layout_alignLeft="@+id/cadastrarIDfb"
+        android:layout_alignStart="@+id/cadastrarIDfb"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -81,12 +84,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/senhaConIDfb"
-        android:layout_alignEnd="@+id/senhaConIDfb" />
+        android:layout_alignEnd="@+id/senhaConIDfb"
+        android:textColorHint="#949494" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:drawablePadding="5dip"
         android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"
@@ -96,7 +100,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColorHint="#949494" />
 
     <ImageView
         android:layout_width="100dp"
@@ -104,6 +109,9 @@
         android:id="@+id/imageView2"
         android:background="@drawable/logo"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/voltarIDfb"
-        android:layout_alignEnd="@+id/voltarIDfb" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp" />
 </RelativeLayout>

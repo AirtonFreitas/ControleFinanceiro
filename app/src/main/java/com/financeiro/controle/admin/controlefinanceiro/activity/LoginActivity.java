@@ -76,15 +76,12 @@ public class LoginActivity extends Activity {
         botaoNovoCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, MainCadatroActivityFireBase.class) );
+                startActivity(new Intent(LoginActivity.this, MainCadastroActivityFireBase.class) );
             }
         });
 
 
     }
-
-
-
 
     public void validarLogin(){
         firebaseAuth.signInWithEmailAndPassword(caixaEmail.getText().toString(), caixaSenha.getText().toString())

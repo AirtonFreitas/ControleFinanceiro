@@ -12,7 +12,8 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -33,7 +34,8 @@
         fab:menu_icon="@drawable/addmenu"
         app:menu_colorNormal="@color/colorAccent"
         app:menu_colorPressed="@color/colorPrimaryDark"
-        >
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp">
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_receita"
@@ -41,7 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/iconreceita"
-         fab:fab_colorNormal="@color/colorPrimaryReceita"
+            fab:fab_colorNormal="@color/colorPrimaryReceita"
+            app:fab_colorPressed="@color/colorPrimaryDarkReceita"
             fab:fab_size="mini"
             fab:fab_label="Receitas" />
 
@@ -52,6 +55,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/icondespesa"
             fab:fab_colorNormal="@color/colorPrimaryDespesa"
+            app:fab_colorPressed="@color/colorPrimaryDarkDespesa"
             fab:fab_size="mini"
             fab:fab_label="Despesas" />
 

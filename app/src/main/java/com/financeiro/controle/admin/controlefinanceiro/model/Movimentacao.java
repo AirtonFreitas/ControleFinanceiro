@@ -2,32 +2,43 @@ package com.financeiro.controle.admin.controlefinanceiro.model;
 
 import com.financeiro.controle.admin.controlefinanceiro.config.ConfiguracaoFirebase;
 import com.financeiro.controle.admin.controlefinanceiro.helper.Base64Custom;
-import com.financeiro.controle.admin.controlefinanceiro.helper.Date;
+import com.financeiro.controle.admin.controlefinanceiro.helper.DateCustom;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 
 public class Movimentacao {
+
     private String data;
     private String categoria;
     private String descricao;
     private String tipo;
     private double valor;
-
-
-    public void salvar(String data){
-        FirebaseAuth  autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
-
-        String idUsuario = Base64Custom.codificarBase64(autenticacao.getCurrentUser().getEmail());
-        String mesAno = Date.mesAnoDataEscolhida(data);
-        DatabaseReference firebase = ConfiguracaoFirebase.getFirebaseDatabase();
-        firebase.child("movimentacao")
-                .child(idUsuario)
-                .child(mesAno)
-                .push()
-                .setValue(this);
-    }
+    private String key;
 
     public Movimentacao() {
+    }
+
+    public void salvar(String dataEscolhida){
+
+        FirebaseAuth autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+        String idUsuario = Base64Custom.codificarBase64( autenticacao.getCurrentUser().getEmail() );
+        String mesAno = DateCustom.mesAnoDataEscolhida( dataEscolhida );
+
+        DatabaseReference firebase = ConfiguracaoFirebase.getFirebaseDatabase();
+        firebase.child("movimentacao")
+                .child( idUsuario )
+                .child( mesAno )
+                .push()
+                .setValue(this);
+
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public String getData() {

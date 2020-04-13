@@ -2,10 +2,10 @@ package com.financeiro.controle.admin.controlefinanceiro.helper;
 
 import java.text.SimpleDateFormat;
 
-public class Date {
+public class DateCustom {
     public static String dataAtual(){
         long date = System.currentTimeMillis();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("d/M/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("d/MM/yyyy");
         String dataString = simpleDateFormat.format(date);
         return dataString;
     }

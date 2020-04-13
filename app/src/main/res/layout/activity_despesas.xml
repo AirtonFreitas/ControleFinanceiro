@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:padding="10dp"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:background="@color/colorPrimaryDespesa"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -31,8 +31,7 @@
             android:hint="R$ 0,00"
             android:textSize="40dp"
             android:textColor="@android:color/white"
-            android:background="@android:color/transparent"
-            android:padding="10dp" />
+            android:background="@android:color/transparent" />
     </LinearLayout>
 
     <EditText
@@ -44,7 +43,8 @@
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="47dp" />
+        android:layout_marginTop="47dp"
+        android:hint="ex: 01/01/2020" />
 
     <EditText
         android:layout_width="match_parent"
@@ -61,6 +61,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/editDescricao"
         android:layout_below="@+id/editCategoria"
@@ -72,6 +73,7 @@
 
     <com.github.clans.fab.FloatingActionButton
         android:id="@+id/fabSalvar"
+        android:onClick="salvarDespesa"
         android:layout_gravity="end|bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,8 +83,11 @@
         fab:fab_size="normal"
         fab:fab_label="Despesas"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="salvarDespesa"/>
+        android:layout_marginRight="15dp" />
+
+
 
 </RelativeLayout>

@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:padding="10dp"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:background="@color/colorPrimaryReceita"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -25,7 +25,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:id="@+id/editValor"
             android:layout_gravity="center_horizontal"
             android:inputType="numberDecimal"
             android:hint="R$ 0,00"
@@ -61,6 +61,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/editDescricao"
         android:layout_below="@+id/editCategoria"
@@ -71,29 +72,23 @@
 
 
     <com.github.clans.fab.FloatingActionButton
-        android:id="@+id/adc_receita"
+        android:id="@+id/fabSalvar"
         android:layout_gravity="end|bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:src="@drawable/salvar"
+        android:onClick="salvarReceita"
         fab:fab_colorNormal="@color/colorAccentReceita"
+        fab:fab_colorPressed="@color/colorPrimaryDarkReceita"
         fab:fab_size="normal"
         fab:fab_label="Receitas"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginRight="15dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/editDescricao"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/adc_receita"
-        android:layout_toStartOf="@+id/adc_receita" />
+
 
 </RelativeLayout>

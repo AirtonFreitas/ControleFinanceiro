@@ -15,9 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Main2Activity" />
-        <activity android:name=".activity.MainCadatroActivityFireBase" />
-        <activity android:name=".activity.Main_initial1" />
+        <activity android:name=".activity.MainCadastroActivityFireBase" />
         <activity android:name=".activity.LoginActivity" />
         <activity
             android:name=".activity.principalActivity"
