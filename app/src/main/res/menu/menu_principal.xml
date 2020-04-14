@@ -2,9 +2,15 @@
     <menu xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
      <item
-            android:id="@+id/menuSair"
+            android:id="@+id/menuDicas"
             android:orderInCategory="100"
-            android:title="Sair"
+            android:title="Dicas Financeiras"
             app:showAsAction="never"
             />
+    <item
+        android:id="@+id/menuSair"
+        android:orderInCategory="100"
+        android:title="Sair"
+        app:showAsAction="never"
+        />
 </menu>

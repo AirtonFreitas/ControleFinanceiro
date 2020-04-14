@@ -21,14 +21,16 @@
             android:name=".activity.principalActivity"
             android:label="@string/title_activity_principal"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.ActivityReceitas"
-            android:theme="@style/receitaTema"/>
-        <activity android:name=".activity.ActivityDespesas"
-            android:theme="@style/despesasTema">
-
-
-
-        </activity>
+        <activity
+            android:name=".activity.ActivityReceitas"
+            android:theme="@style/receitaTema" />
+        <activity
+            android:name=".activity.ActivityDespesas"
+            android:theme="@style/despesasTema" />
+        <activity android:name=".activity.ActivityDicas" />
+        <activity android:name=".activity.ActivityVermelho" />
+        <activity android:name=".activity.ActivityAzul" />
+        <activity android:name=".activity.ActivityVerde"></activity>
     </application>
 
 </manifest>

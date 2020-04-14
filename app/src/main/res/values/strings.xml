@@ -1,4 +1,39 @@
 <resources>
     <string name="app_name">Controle Financeiro</string>
     <string name="title_activity_principal">principalActivity</string>
+
+    <string name="textVerde">
+        1. Lance TODOS os gastos e receitas que você tiver no aplicativo Controle Finaneiro. Tente não mascarar sua Situação Financeira; \n \n
+        2. Tenha metas de Curto, Médio e Logo Prazo bem Definidas; \n \n
+        3. Tire tempo para pensar no seu perfil financeiro; \n \n
+        4. Use 20 minutos do seu dia para aprender sobre finanças pessoais; \n \n
+        5. Abra o aplicativo Controle Financeiro para acompanhar como está sua situação financeira; \n \n
+        6. Aprenda a Fazer mais com menos; \n \n
+        7. Resista ao impulso de comprar coisas desnecessárias; \n \n
+        8. Continue nos acompanhando, em breve teremos mais dicas aqui. \n \n
+
+
+    </string>
+
+    <string name="textAzul">
+        1. Lance TODOS os gastos e receitas que você tiver no aplicativo Controle Finaneiro. Tente não mascarar sua Situação Financeira; \n \n
+        2. Saiba qual é a real situação das suas dívidas; \n \n
+        3. Faça uma análise completa do seu orçamento financeiro pessoal usando o aplicativo Controle Financeiro; \n \n
+        4. Tente não gastar muito durante o mês. Este aplicativo  vai te ajudar a ver como realmente está sua situação Financeira; \n \n
+        5. Reorganize-se para evitar novas dívidas; \n \n
+        6. Crie uma reserva de emergência; \n \n
+        7. Continue nos acompanhando, em breve teremos mais dicas aqui.
+    </string>
+
+    <string name="textVermelho">
+        1. Lance TODOS os gastos e receitas que você tiver no aplicativo Controle Finaneiro. Tente não mascarar sua Situação Financeira; \n \n
+        2. Saiba qual é a real situação das suas dívidas; \n \n
+        3. Priorize as dívidas mais altas; \n \n
+        4. Considere trocar uma dívida alta por uma com juros mais baixos; \n \n
+        5. Busque renegociar os débitos com os credores; \n \n
+        6. Fuja dos parcelamentos; \n \n
+        7. Mantenha-se na linha; \n \n
+        8. Continue nos acompanhando, em breve teremos mais dicas aqui.
+
+    </string>
 </resources>

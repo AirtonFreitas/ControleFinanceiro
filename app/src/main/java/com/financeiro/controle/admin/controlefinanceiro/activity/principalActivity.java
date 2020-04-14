@@ -234,7 +234,13 @@ public class principalActivity extends AppCompatActivity {
                     startActivity(new Intent(this, LoginActivity.class));
                     finish();
                 break;
-        }
+            case R.id.menuDicas:
+                startActivity(new Intent(this, ActivityDicas.class));
+                finish();
+                break;
+            }
+
+
         return super.onOptionsItemSelected(item);
     }
 
