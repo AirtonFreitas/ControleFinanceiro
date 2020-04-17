@@ -103,6 +103,7 @@ public class MainCadastroActivityFireBase extends Activity {
                     String idUsuario = Base64Custom.codificarBase64( usuario.getEmail() );
                     usuario.setIdUsuario( idUsuario );
                     usuario.salvar();
+                    startActivity(new Intent(MainCadastroActivityFireBase.this, principalActivity.class));
                     finish();
 
                 }else {
