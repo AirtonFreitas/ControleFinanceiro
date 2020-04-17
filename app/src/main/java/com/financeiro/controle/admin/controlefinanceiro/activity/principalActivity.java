@@ -236,7 +236,9 @@ public class principalActivity extends AppCompatActivity {
                 break;
             case R.id.menuDicas:
                 startActivity(new Intent(this, ActivityDicas.class));
-                finish();
+                break;
+            case R.id.menuContatos:
+                startActivity(new Intent(this, ActivityContacts.class));
                 break;
             }
 

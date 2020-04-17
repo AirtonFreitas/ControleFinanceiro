@@ -56,7 +56,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:paddingTop="20dp"
-        android:hint="Título" />
+        android:hint="Descrição" />
 
     <EditText
         android:layout_width="match_parent"
@@ -68,7 +68,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:paddingTop="20dp"
-        android:hint="Descrição" />
+        android:hint="Título" />
 
 
     <com.github.clans.fab.FloatingActionButton

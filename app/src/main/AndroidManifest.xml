@@ -30,7 +30,8 @@
         <activity android:name=".activity.ActivityDicas" />
         <activity android:name=".activity.ActivityVermelho" />
         <activity android:name=".activity.ActivityAzul" />
-        <activity android:name=".activity.ActivityVerde"></activity>
+        <activity android:name=".activity.ActivityVerde" />
+        <activity android:name=".activity.ActivityContacts"></activity>
     </application>
 
 </manifest>

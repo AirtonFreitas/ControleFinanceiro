@@ -11,8 +11,6 @@
         6. Aprenda a Fazer mais com menos; \n \n
         7. Resista ao impulso de comprar coisas desnecessárias; \n \n
         8. Continue nos acompanhando, em breve teremos mais dicas aqui. \n \n
-
-
     </string>
 
     <string name="textAzul">
@@ -34,6 +32,18 @@
         6. Fuja dos parcelamentos; \n \n
         7. Mantenha-se na linha; \n \n
         8. Continue nos acompanhando, em breve teremos mais dicas aqui.
-
     </string>
+
+
+    <string name="LinkedAirton">linkedin.com/in/airton-siqueira-85260b174
+    <a href="https://linkedin.com/in/airton-siqueira-85260b174"> </a>
+    </string>
+    <string name="linkFael">linkedin.com/in/rafael-siqueira-de-freitas-7a2a9313b
+    <a href="https://linkedin.com/in/rafael-siqueira-de-freitas-7a2a9313b"> </a>
+    </string>
+    <string name="emailFael">rafaelsqf2@gmail.com
+    <a href="rafaelsqf2@gmail.com"> </a>
+    </string>
+    <string name="emailAirton">airtonsiqueiradefreitas@gmail.com.br
+    <a href="airtonsiqueiradefreitas@gmail.com.br"> </a></string>
 </resources>

@@ -23,7 +23,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="5dip"
+        android:inputType="text"
+        android:drawablePadding="10dip"
         android:drawableLeft="@drawable/person"
         android:id="@+id/nomeIDfb"
         android:textColor="#949494"
@@ -35,7 +36,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="5dip"
+        android:inputType="text"
+        android:drawablePadding="10dip"
         android:drawableLeft="@drawable/email"
         android:id="@+id/emailIDfb"
         android:textColor="#949494"
@@ -73,7 +75,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="5dip"
+        android:drawablePadding="10dip"
         android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"
@@ -90,7 +92,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="5dip"
+        android:drawablePadding="10dip"
         android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"

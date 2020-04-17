@@ -19,73 +19,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_height="150dp"
-        android:background="@color/colorPrimaryReceita"
-        android:id="@+id/linearLayoutVerde"
-        android:layout_below="@+id/linearLayoutVermelho"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Investir meu dinheiro"
-            android:id="@+id/textViewVerde"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_height="150dp"
-        android:background="@color/colorPrimaryDespesa"
-        android:id="@+id/linearLayoutVermelho"
-        android:layout_below="@+id/linearLayoutAzul"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Sair do Vermelho"
-            android:id="@+id/textViewVermelho"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_height="150dp"
-        android:background="@color/colorPrimary"
-        android:id="@+id/linearLayoutAzul"
-        android:layout_marginTop="17dp"
-        android:layout_below="@+id/textView8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Controlar meus gastos"
-            android:id="@+id/textViewAzul"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
-
 
     <Button
         android:text="Voltar"
@@ -107,6 +40,39 @@
         android:layout_alignLeft="@+id/voltarIDfb"
         android:layout_alignStart="@+id/voltarIDfb"
         android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Controlar meus gastos"
+        android:id="@+id/buttonAzul"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDespesa"
+        android:text="Sair do Vermelho"
+        android:id="@+id/buttonVermelho"
+        android:layout_below="@+id/buttonAzul"
+        android:layout_alignLeft="@+id/buttonAzul"
+        android:layout_alignStart="@+id/buttonAzul"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryReceita"
+        android:text="Investir meu Dinheiro"
+        android:id="@+id/buttonVerde"
+        android:layout_below="@+id/buttonVermelho"
+        android:layout_alignRight="@+id/buttonVermelho"
+        android:layout_alignEnd="@+id/buttonVermelho"
+        android:textColor="@android:color/white" />
 
 
 </RelativeLayout>

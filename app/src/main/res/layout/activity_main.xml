@@ -23,7 +23,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="5dip"
+        android:inputType="text"
+        android:drawablePadding="10dip"
         android:drawableLeft="@drawable/person"
         android:id="@+id/emailcxID"
         android:layout_alignParentLeft="true"
@@ -34,7 +35,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawablePadding="5dip"
+        android:drawablePadding="10dip"
         android:drawableLeft="@drawable/lock"
         android:inputType="textPassword"
         android:ems="10"

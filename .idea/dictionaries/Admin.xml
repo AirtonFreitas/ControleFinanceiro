@@ -2,6 +2,7 @@
   <dictionary name="Admin">
     <words>
       <w>atual</w>
+      <w>azul</w>
       <w>campo</w>
       <w>categoria</w>
       <w>coloque</w>
@@ -9,6 +10,7 @@
       <w>meses</w>
       <w>movimentacao</w>
       <w>preenche</w>
+      <w>vermelho</w>
     </words>
   </dictionary>
 </component>

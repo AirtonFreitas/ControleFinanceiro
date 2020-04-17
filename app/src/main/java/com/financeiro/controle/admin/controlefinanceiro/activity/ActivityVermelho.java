@@ -15,7 +15,7 @@ public class ActivityVermelho extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_azul);
+        setContentView(R.layout.activity_vermelho);
 
         botaoVoltar = (Button) findViewById(R.id.voltarIDfb);
         botaoVoltar.setOnClickListener(new View.OnClickListener() {
