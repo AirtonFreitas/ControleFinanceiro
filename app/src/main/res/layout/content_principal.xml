@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.financeiro.controle.admin.controlefinanceiro.activity.principalActivity"
+    tools:context=".activity.principalActivity"
     android:weightSum="1"
     android:orientation="vertical"
     tools:showIn="@layout/activity_principal">
@@ -55,7 +55,6 @@
             android:textColor="@android:color/white"
             android:textSize="14sp" />
     </LinearLayout>
-
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendarView"
@@ -67,6 +66,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/linearLayout2"
         app:mcv_tileSize="50dp"/>
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

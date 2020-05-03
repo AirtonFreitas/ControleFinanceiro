@@ -6,11 +6,16 @@ buildscript {
         maven{
             url 'https://maven.google.com'
             name 'Google'
+            //linha abaixo teste grafico
+            maven { url 'https://jitpack.io' }
         }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.3'
         classpath 'com.google.gms:google-services:3.0.0'
+        //linha abaixo do teste de grafico
+        //classpath 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+        //classpath 'com.jjoe64:graphview:4.2.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -23,7 +28,10 @@ allprojects {
         maven{
             url 'https://maven.google.com'
             name 'Google'
+            //lista abaixo teste grafico
+            maven { url 'https://jitpack.io' }
         }
+
     }
 }
 

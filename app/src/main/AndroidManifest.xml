@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainCadastroActivityFireBase" />
+        <activity android:name=".activity.MainCadastro" />
         <activity android:name=".activity.LoginActivity" />
         <activity
             android:name=".activity.principalActivity"
@@ -31,7 +31,8 @@
         <activity android:name=".activity.ActivityVermelho" />
         <activity android:name=".activity.ActivityAzul" />
         <activity android:name=".activity.ActivityVerde" />
-        <activity android:name=".activity.ActivityContacts"></activity>
+        <activity android:name=".activity.ActivityContacts" />
+        <activity android:name=".activity.ActivityGrafico"></activity>
     </application>
 
 </manifest>

@@ -17,10 +17,10 @@ public class ActivityDicas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_dicas);
+        setContentView(R.layout.activity_dicas);
 
 
-        botaoVoltar = (Button) findViewById(R.id.voltarIDfb);
+        botaoVoltar = (Button) findViewById(R.id.btnVoltID);
         vermelho = (Button) findViewById(R.id.buttonVermelho);
         verde = (Button) findViewById(R.id.buttonVerde);
         azul = (Button) findViewById(R.id.buttonAzul);

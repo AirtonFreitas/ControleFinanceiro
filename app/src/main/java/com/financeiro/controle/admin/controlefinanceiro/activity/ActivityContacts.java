@@ -18,7 +18,7 @@ public class ActivityContacts extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_contacts);
+        setContentView(R.layout.activity_contacts);
 
         TextView text1 = (TextView) findViewById(R.id.textEmail);
         TextView text2 = (TextView) findViewById(R.id.textEmail2);
@@ -31,7 +31,7 @@ public class ActivityContacts extends AppCompatActivity {
         text4.setMovementMethod(LinkMovementMethod.getInstance());
 
 
-        botaoVoltar = (Button) findViewById(R.id.voltarIDfb);
+        botaoVoltar = (Button) findViewById(R.id.btnVoltID);
 
         botaoVoltar.setOnClickListener(new View.OnClickListener() {
             @Override

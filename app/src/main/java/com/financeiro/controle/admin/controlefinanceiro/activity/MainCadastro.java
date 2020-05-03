@@ -26,7 +26,7 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 import java.util.Objects;
 
-public class MainCadastroActivityFireBase extends Activity {
+public class MainCadastro extends Activity {
 
     private Button botaoVoltar, botaoCadastrar;
     private EditText textoNome, textoEmail, textoSenha, textoConSenha;
@@ -36,9 +36,9 @@ public class MainCadastroActivityFireBase extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_cadastro_activity_fire_base);
+        setContentView(R.layout.activity_cadastro);
 
-        botaoVoltar = (Button) findViewById(R.id.voltarIDfb);
+        botaoVoltar = (Button) findViewById(R.id.btnVoltID);
         botaoCadastrar = (Button) findViewById(R.id.cadastrarIDfb);
         textoNome = (EditText) findViewById(R.id.nomeIDfb);
         textoEmail = (EditText) findViewById(R.id.emailIDfb);
@@ -48,7 +48,7 @@ public class MainCadastroActivityFireBase extends Activity {
         botaoVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainCadastroActivityFireBase.this, LoginActivity.class));
+                startActivity(new Intent(MainCadastro.this, LoginActivity.class));
                 finish();
             }
         });
@@ -72,17 +72,17 @@ public class MainCadastroActivityFireBase extends Activity {
                                 usuario.setSenha( senha );
                                 cadastrarUsuario2();
                             }else{
-                                Toast.makeText(MainCadastroActivityFireBase.this, "As senhas devem ser iguais!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainCadastro.this, "As senhas devem ser iguais!", Toast.LENGTH_SHORT).show();
                             }
                         }else{
-                            Toast.makeText(MainCadastroActivityFireBase.this, "Ops ;( coloque a senha por favor!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainCadastro.this, "Ops ;( coloque a senha por favor!", Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(MainCadastroActivityFireBase.this, "Ops ;( coloque o e-mail, por favor", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainCadastro.this, "Ops ;( coloque o e-mail, por favor", Toast.LENGTH_SHORT).show();
                     }
 
                 }else{
-                    Toast.makeText(MainCadastroActivityFireBase.this, "Ops ;( coloque o nome, por favor", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainCadastro.this, "Ops ;( coloque o nome, por favor", Toast.LENGTH_SHORT).show();
                 }
 
                 }
@@ -103,7 +103,7 @@ public class MainCadastroActivityFireBase extends Activity {
                     String idUsuario = Base64Custom.codificarBase64( usuario.getEmail() );
                     usuario.setIdUsuario( idUsuario );
                     usuario.salvar();
-                    startActivity(new Intent(MainCadastroActivityFireBase.this, principalActivity.class));
+                    startActivity(new Intent(MainCadastro.this, principalActivity.class));
                     finish();
 
                 }else {
@@ -122,7 +122,7 @@ public class MainCadastroActivityFireBase extends Activity {
                         e.printStackTrace();
                     }
 
-                    Toast.makeText(MainCadastroActivityFireBase.this,
+                    Toast.makeText(MainCadastro.this,
                             excecao,
                             Toast.LENGTH_SHORT).show();
                 }

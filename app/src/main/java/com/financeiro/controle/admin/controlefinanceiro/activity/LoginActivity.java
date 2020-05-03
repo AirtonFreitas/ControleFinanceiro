@@ -38,7 +38,7 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         caixaEmail = (EditText) findViewById(R.id.emailcxID);
         caixaSenha = (EditText) findViewById(R.id.senhacxID);
@@ -76,7 +76,7 @@ public class LoginActivity extends Activity {
         botaoNovoCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, MainCadastroActivityFireBase.class) );
+                startActivity(new Intent(LoginActivity.this, MainCadastro.class) );
             }
         });
 

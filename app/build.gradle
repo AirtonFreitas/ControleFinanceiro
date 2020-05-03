@@ -1,9 +1,9 @@
+apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.3"
-
+    buildToolsVersion '24.0.3'
     defaultConfig {
         applicationId "com.financeiro.controle.admin.controlefinanceiro"
         minSdkVersion 15
@@ -16,6 +16,8 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -31,6 +33,11 @@ dependencies {
     compile 'com.prolificinteractive:material-calendarview:1.4.3'
     compile 'com.android.support:cardview-v7:21.0.+'
     compile 'com.android.support:recyclerview-v7:21.0.+'
+    //linha abaixo do teste de grafico
+    //compile 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //teste grafico
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
 
 }
-apply plugin: 'com.google.gms.google-services'

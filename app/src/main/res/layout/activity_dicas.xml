@@ -23,7 +23,7 @@
     <Button
         android:text="Voltar"
         android:textSize="20dp"
-        android:id="@+id/voltarIDfb"
+        android:id="@+id/btnVoltID"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
@@ -37,8 +37,8 @@
         android:id="@+id/imageView4"
         android:background="@drawable/logo"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/voltarIDfb"
-        android:layout_alignStart="@+id/voltarIDfb"
+        android:layout_alignLeft="@+id/btnVoltID"
+        android:layout_alignStart="@+id/btnVoltID"
         android:layout_margin="10dp" />
 
     <Button

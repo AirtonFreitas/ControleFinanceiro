@@ -149,8 +149,8 @@ public class principalActivity extends AppCompatActivity {
         String idUsuario = Base64Custom.codificarBase64( emailUsuario );
 
         movimentacaoRef = firebaseRef   .child("movimentacao")
-                                        .child(idUsuario)
-                                        .child(mesAnoSelecionado);
+                .child(idUsuario)
+                .child(mesAnoSelecionado);
 
 
         valueEventListenerMovimentacoes = movimentacaoRef.addValueEventListener(new ValueEventListener() {
@@ -230,9 +230,9 @@ public class principalActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menuSair:
-                    autenticacao.signOut();
-                    startActivity(new Intent(this, LoginActivity.class));
-                    finish();
+                autenticacao.signOut();
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
                 break;
             case R.id.menuDicas:
                 startActivity(new Intent(this, ActivityDicas.class));
@@ -240,7 +240,10 @@ public class principalActivity extends AppCompatActivity {
             case R.id.menuContatos:
                 startActivity(new Intent(this, ActivityContacts.class));
                 break;
-            }
+            case R.id.menuGrafico:
+                startActivity(new Intent(this, ActivityGrafico.class));
+                break;
+        }
 
 
         return super.onOptionsItemSelected(item);

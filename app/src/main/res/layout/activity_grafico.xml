@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.financeiro.controle.admin.controlefinanceiro.activity.ActivityGrafico">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnVoltID"
+        android:layout_alignStart="@+id/btnVoltID"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gráfico Evolutivo"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!--<com.github.mikephil.charting.charts.LineChart
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:id="@+id/graph"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/graph"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        />
+    -->
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Despesas "
+        android:id="@+id/switch2"
+        android:checked="false"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/chart"
+        android:layout_alignRight="@+id/chart"
+        android:layout_alignEnd="@+id/chart" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receitas "
+        android:id="@+id/switch3"
+        android:checked="true"
+        android:layout_below="@+id/switch2"
+        android:layout_alignRight="@+id/switch2"
+        android:layout_alignEnd="@+id/switch2"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="Voltar"
+        android:textSize="20dp"
+        android:id="@+id/btnVoltID"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dica_graficos"
+        android:id="@+id/textView11"
+        android:textSize="13sp"
+        android:layout_above="@+id/btnVoltarID"
+        android:layout_toLeftOf="@+id/switch2"
+        android:layout_toStartOf="@+id/switch2"
+        android:layout_below="@+id/chart"
+        android:padding="15dp"
+        android:gravity="center|start" />
+
+
+
+
+</RelativeLayout>

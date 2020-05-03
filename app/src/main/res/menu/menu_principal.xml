@@ -19,4 +19,10 @@
         android:title="Sair"
         app:showAsAction="never"
         />
+    <item
+        android:id="@+id/menuGrafico"
+        android:orderInCategory="100"
+        android:title="Gráfico Evolutivo"
+        app:showAsAction="never"
+        />
 </menu>
