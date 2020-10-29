@@ -1,4 +1,4 @@
-package com.financeiro.controle.admin.controlefinanceiro;
+package com.financeiro.controle.admin.listadecompras;
 
 import org.junit.Test;
 

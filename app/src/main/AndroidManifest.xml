@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.financeiro.controle.admin.controlefinanceiro">
+    package="com.financeiro.controle.admin.listadecompras">
 
     <application
         android:allowBackup="true"
@@ -8,31 +8,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name="com.financeiro.controle.admin.listadecompras.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainCadastro" />
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name="com.financeiro.controle.admin.listadecompras.activity.MainCadastro" />
+        <activity android:name="com.financeiro.controle.admin.listadecompras.activity.LoginActivity" />
         <activity
-            android:name=".activity.principalActivity"
+            android:name="com.financeiro.controle.admin.listadecompras.activity.principalActivity"
             android:label="@string/title_activity_principal"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.ActivityReceitas"
+            android:name="com.financeiro.controle.admin.listadecompras.activity.ActivityReceitas"
             android:theme="@style/receitaTema" />
-        <activity
-            android:name=".activity.ActivityDespesas"
-            android:theme="@style/despesasTema" />
-        <activity android:name=".activity.ActivityDicas" />
-        <activity android:name=".activity.ActivityVermelho" />
-        <activity android:name=".activity.ActivityAzul" />
-        <activity android:name=".activity.ActivityVerde" />
-        <activity android:name=".activity.ActivityContacts" />
-        <activity android:name=".activity.ActivityGrafico"></activity>
+        <activity android:name="com.financeiro.controle.admin.listadecompras.activity.ActivityContacts" />
     </application>
 
 </manifest>

@@ -27,17 +27,6 @@
                 android:textStyle="bold"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/textAdapterValor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:text="valor"
-                android:textColor="#00D39E"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
         </LinearLayout>
 
             <TextView

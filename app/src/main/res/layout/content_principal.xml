@@ -32,14 +32,14 @@
             android:text="Carregando..."
             android:id="@+id/textSaudacao"
             android:layout_gravity="center"
-            android:textSize="18sp"
+            android:textSize="25sp"
             android:textColor="@android:color/white"
             android:gravity="center_horizontal" />
-
+        <!--
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R$0,00"
+            android:text="0"
             android:id="@+id/textSaldo"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
@@ -54,6 +54,10 @@
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
+        -->
+
+
+
     </LinearLayout>
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         xmlns:app="http://schemas.android.com/apk/res-auto"

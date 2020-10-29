@@ -46,21 +46,7 @@
             fab:fab_colorNormal="@color/colorPrimaryReceita"
             app:fab_colorPressed="@color/colorPrimaryDarkReceita"
             fab:fab_size="mini"
-            fab:fab_label="Receitas" />
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_despesa"
-            android:onClick="adicionarDespesa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icondespesa"
-            fab:fab_colorNormal="@color/colorPrimaryDespesa"
-            app:fab_colorPressed="@color/colorPrimaryDarkDespesa"
-            fab:fab_size="mini"
-            fab:fab_label="Despesas" />
-
-
-
+            fab:fab_label="Novo Item" />
     </com.github.clans.fab.FloatingActionMenu>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -1,6 +1,6 @@
-package com.financeiro.controle.admin.controlefinanceiro.model;
+package com.financeiro.controle.admin.listadecompras.model;
 
-import com.financeiro.controle.admin.controlefinanceiro.config.ConfiguracaoFirebase;
+import com.financeiro.controle.admin.listadecompras.config.ConfiguracaoFirebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 

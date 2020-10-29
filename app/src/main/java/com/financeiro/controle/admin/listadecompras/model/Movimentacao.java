@@ -1,8 +1,8 @@
-package com.financeiro.controle.admin.controlefinanceiro.model;
+package com.financeiro.controle.admin.listadecompras.model;
 
-import com.financeiro.controle.admin.controlefinanceiro.config.ConfiguracaoFirebase;
-import com.financeiro.controle.admin.controlefinanceiro.helper.Base64Custom;
-import com.financeiro.controle.admin.controlefinanceiro.helper.DateCustom;
+import com.financeiro.controle.admin.listadecompras.config.ConfiguracaoFirebase;
+import com.financeiro.controle.admin.listadecompras.helper.Base64Custom;
+import com.financeiro.controle.admin.listadecompras.helper.DateCustom;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 
@@ -77,8 +77,9 @@ public class Movimentacao {
         return valor;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
+    public void setValor(double valor) { this.valor = 1;
+
+    //public void setValor(double valor) { this.valor = valor;
     }
 
 

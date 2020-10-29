@@ -1,4 +1,4 @@
-package com.financeiro.controle.admin.controlefinanceiro.adapter;
+package com.financeiro.controle.admin.listadecompras.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.financeiro.controle.admin.controlefinanceiro.R;
-import com.financeiro.controle.admin.controlefinanceiro.model.Movimentacao;
+import com.financeiro.controle.admin.listadecompras.R;
+import com.financeiro.controle.admin.listadecompras.model.Movimentacao;
 
 import java.util.List;
 
@@ -36,13 +36,14 @@ public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentaca
         Movimentacao movimentacao = movimentacoes.get(position);
 
         holder.titulo.setText(movimentacao.getDescricao());
-        holder.valor.setText(String.valueOf(movimentacao.getValor()));
+        //holder.valor.setText(String.valueOf(movimentacao.getValor()));
         holder.categoria.setText(movimentacao.getCategoria());
-        holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentReceita));
-        if (movimentacao.getTipo() == "d" || movimentacao.getTipo().equals("d")) {
-            holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentDespesa));
-            holder.valor.setText("-" + movimentacao.getValor());
-        }
+        //holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentReceita));
+        //if (movimentacao.getTipo() == "d" || movimentacao.getTipo().equals("d")) {
+        //   holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentDespesa));
+        //   holder.valor.setText("-" + movimentacao.getValor());
+        //}
+
     }
 
 
@@ -53,13 +54,12 @@ public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentaca
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView titulo, valor, categoria;
+        TextView titulo, categoria;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             titulo = (TextView) itemView.findViewById(R.id.textAdapterTitulo);
-            valor = (TextView) itemView.findViewById(R.id.textAdapterValor);
             categoria = (TextView) itemView.findViewById(R.id.textAdapterCategoria);
         }
 

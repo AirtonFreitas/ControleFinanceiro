@@ -1,4 +1,4 @@
-package com.financeiro.controle.admin.controlefinanceiro.activity;
+package com.financeiro.controle.admin.listadecompras.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -12,10 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.financeiro.controle.admin.controlefinanceiro.R;
-import com.financeiro.controle.admin.controlefinanceiro.config.ConfiguracaoFirebase;
-import com.financeiro.controle.admin.controlefinanceiro.helper.Base64Custom;
-import com.financeiro.controle.admin.controlefinanceiro.model.Usuario;
+import com.financeiro.controle.admin.listadecompras.R;
+import com.financeiro.controle.admin.listadecompras.config.ConfiguracaoFirebase;
+import com.financeiro.controle.admin.listadecompras.helper.Base64Custom;
+import com.financeiro.controle.admin.listadecompras.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

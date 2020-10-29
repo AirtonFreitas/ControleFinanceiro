@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.financeiro.controle.admin.controlefinanceiro.activity.ActivityReceitas">
+    tools:context="com.financeiro.controle.admin.listadecompras.activity.ActivityReceitas">
 
     <LinearLayout
         android:orientation="vertical"
@@ -17,21 +17,36 @@
         android:padding="10dp"
         android:layout_height="150dp"
         android:background="@color/colorPrimaryReceita"
-        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayoutVERMELHO"
+        android:layout_above="@+id/editData"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/linearLayoutVERMELHO">
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentTop="true">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editValor"
-            android:layout_gravity="center_horizontal"
-            android:inputType="numberDecimal"
-            android:hint="R$ 0,00"
-            android:textSize="40dp"
-            android:textColor="@android:color/white"
-            android:background="@android:color/transparent" />
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editDescricao"
+            android:layout_below="@+id/editCategoria"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="20dp"
+            android:hint="Nome do Item" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editCategoria"
+            android:paddingTop="20dp"
+            android:hint="Observação"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </LinearLayout>
 
     <EditText
@@ -40,35 +55,12 @@
         android:inputType="date"
         android:ems="10"
         android:id="@+id/editData"
-        android:layout_below="@+id/linearLayoutVERMELHO"
+        android:hint="ex: 01/01/2020"
+        android:layout_above="@+id/fabSalvar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="47dp"
-        android:hint="ex: 01/01/2020" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="10"
-        android:id="@+id/editCategoria"
-        android:layout_below="@+id/editData"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingTop="20dp"
-        android:hint="Descrição" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="10"
-        android:id="@+id/editDescricao"
-        android:layout_below="@+id/editCategoria"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:paddingTop="20dp"
-        android:hint="Título" />
+        android:layout_marginBottom="50dp"
+        android:visibility="invisible" />
 
 
     <com.github.clans.fab.FloatingActionButton

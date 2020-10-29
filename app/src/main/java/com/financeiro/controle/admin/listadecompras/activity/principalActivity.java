@@ -1,4 +1,4 @@
-package com.financeiro.controle.admin.controlefinanceiro.activity;
+package com.financeiro.controle.admin.listadecompras.activity;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.icu.text.DecimalFormat;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,12 +17,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.financeiro.controle.admin.controlefinanceiro.R;
-import com.financeiro.controle.admin.controlefinanceiro.adapter.AdapterMovimentacao;
-import com.financeiro.controle.admin.controlefinanceiro.config.ConfiguracaoFirebase;
-import com.financeiro.controle.admin.controlefinanceiro.helper.Base64Custom;
-import com.financeiro.controle.admin.controlefinanceiro.model.Movimentacao;
-import com.financeiro.controle.admin.controlefinanceiro.model.Usuario;
+import com.financeiro.controle.admin.listadecompras.R;
+import com.financeiro.controle.admin.listadecompras.adapter.AdapterMovimentacao;
+import com.financeiro.controle.admin.listadecompras.config.ConfiguracaoFirebase;
+import com.financeiro.controle.admin.listadecompras.helper.Base64Custom;
+import com.financeiro.controle.admin.listadecompras.model.Movimentacao;
+import com.financeiro.controle.admin.listadecompras.model.Usuario;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -42,7 +40,8 @@ import java.util.List;
 public class principalActivity extends AppCompatActivity {
 
     private MaterialCalendarView calendarView;
-    private TextView textoSaudacao, textoSaldo;
+    private TextView textoSaudacao;
+    //private TextView textoSaldo;
     private FirebaseAuth autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
     private DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
@@ -70,7 +69,7 @@ public class principalActivity extends AppCompatActivity {
 
         calendarView = (MaterialCalendarView) findViewById(R.id.calendarView);
         textoSaudacao = (TextView) findViewById(R.id.textSaudacao);
-        textoSaldo = (TextView) findViewById(R.id.textSaldo);
+        //textoSaldo = (TextView) findViewById(R.id.textSaldo);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerMovimentos);
         configuraCalendarView();
         swipe();
@@ -90,7 +89,7 @@ public class principalActivity extends AppCompatActivity {
             @Override
             public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
                 int dragFlags = ItemTouchHelper.ACTION_STATE_IDLE;
-                int swipeFlags = ItemTouchHelper.END;
+                int swipeFlags = ItemTouchHelper.END | ItemTouchHelper.START | ItemTouchHelper.DOWN | ItemTouchHelper.UP ;
                 return makeMovementFlags(dragFlags, swipeFlags);
             }
 
@@ -109,10 +108,31 @@ public class principalActivity extends AppCompatActivity {
 
     public void excluirMovimentacoes(final RecyclerView.ViewHolder viewHolder){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle("Excluir Movimentação");
-        alertDialog.setMessage("Tem certeza que deseja excluir?");
+        alertDialog.setTitle("Escolha a opção");
+        alertDialog.setMessage("O que você deseja fazer?");
         alertDialog.setCancelable(false);
-        alertDialog.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton("COMPRAR", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                                /*
+                //ESSE TRECHO IRIA DELETAR A LINHA
+                int position = viewHolder.getAdapterPosition();
+                movimentacao = movimentacoes.get(position);
+                String emailUsuario = autenticacao.getCurrentUser().getEmail();
+                String idUsuario = Base64Custom.codificarBase64( emailUsuario );
+
+                movimentacaoRef = firebaseRef   .child("movimentacao")
+                        .child(idUsuario)
+                        .child(mesAnoSelecionado);
+                movimentacaoRef.child(movimentacao.getKey()).removeValue();
+
+                adapterMovimentacao.notifyItemRemoved(position);
+                */
+            }
+        });
+        alertDialog.setNegativeButton("excluir", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 int position = viewHolder.getAdapterPosition();
@@ -126,13 +146,6 @@ public class principalActivity extends AppCompatActivity {
                 movimentacaoRef.child(movimentacao.getKey()).removeValue();
 
                 adapterMovimentacao.notifyItemRemoved(position);
-                atualizarSaldo();
-
-            }
-        });
-        alertDialog.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
                 adapterMovimentacao.notifyDataSetChanged();
             }
         });
@@ -174,23 +187,6 @@ public class principalActivity extends AppCompatActivity {
 
     }
 
-    public void atualizarSaldo(){
-
-        String emailUsuario = autenticacao.getCurrentUser().getEmail();
-        String idUsuario = Base64Custom.codificarBase64( emailUsuario );
-        usuarioRef = firebaseRef.child("usuarios").child( idUsuario );
-
-        if(movimentacao.getTipo().equals("r")){
-            receitaTotal = receitaTotal - movimentacao.getValor();
-            usuarioRef.child("receitaTotal").setValue(receitaTotal);
-        }
-        if(movimentacao.getTipo().equals("d")){
-            despesaTotal = despesaTotal - movimentacao.getValor();
-            usuarioRef.child("despesaTotal").setValue(despesaTotal);
-        }
-
-    }
-
     public void recuperarResumo(){
         String emailUsuario = autenticacao.getCurrentUser().getEmail();
         String idUsuario = Base64Custom.codificarBase64( emailUsuario );
@@ -208,8 +204,8 @@ public class principalActivity extends AppCompatActivity {
                 DecimalFormat decimalFormat = new DecimalFormat("0.##");
                 String resultadoFormatado = decimalFormat.format(resumoUsuario);
 
-                textoSaudacao.setText("Olá, " + usuario.getNome() + " !" );
-                textoSaldo.setText("R$ " + resultadoFormatado);
+                textoSaudacao.setText("Lista de Compras!" );
+                //textoSaldo.setText("R$ " + resultadoFormatado);
 
             }
 
@@ -234,14 +230,8 @@ public class principalActivity extends AppCompatActivity {
                 startActivity(new Intent(this, LoginActivity.class));
                 finish();
                 break;
-            case R.id.menuDicas:
-                startActivity(new Intent(this, ActivityDicas.class));
-                break;
             case R.id.menuContatos:
                 startActivity(new Intent(this, ActivityContacts.class));
-                break;
-            case R.id.menuGrafico:
-                startActivity(new Intent(this, ActivityGrafico.class));
                 break;
         }
 
@@ -252,9 +242,6 @@ public class principalActivity extends AppCompatActivity {
     public void adicionarReceita(View view){
         startActivity(new Intent(this, ActivityReceitas.class) );
 
-    }
-    public void adicionarDespesa(View view){
-        startActivity(new Intent(this, ActivityDespesas.class) );
     }
 
 

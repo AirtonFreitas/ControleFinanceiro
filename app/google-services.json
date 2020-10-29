@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "874198517739",
-    "firebase_url": "https://controle-financeiro-d63eb.firebaseio.com",
-    "project_id": "controle-financeiro-d63eb",
-    "storage_bucket": "controle-financeiro-d63eb.appspot.com"
+    "project_number": "958939521579",
+    "firebase_url": "https://lista-de-compra-8678d.firebaseio.com",
+    "project_id": "lista-de-compra-8678d",
+    "storage_bucket": "lista-de-compra-8678d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:874198517739:android:1eafab84c4a89524",
+        "mobilesdk_app_id": "1:958939521579:android:c7eeab6825159afd5e406e",
         "android_client_info": {
-          "package_name": "com.financeiro.controle.admin.controlefinanceiro"
+          "package_name": "com.financeiro.controle.admin.listadecompras"
         }
       },
       "oauth_client": [
         {
-          "client_id": "874198517739-48kkqsi9s1rer5ua4tuas15m18pas5bu.apps.googleusercontent.com",
+          "client_id": "958939521579-4tgaor0k44ltej49j94da86p42n846l1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.financeiro.controle.admin.controlefinanceiro",
+            "package_name": "com.financeiro.controle.admin.listadecompras",
             "certificate_hash": "47087bdec0ca4638a5c1c21b1f1f6e11cc9531a3"
           }
         },
         {
-          "client_id": "874198517739-mt8spseds6sqkpb6l9pb1f4fm5lgvuac.apps.googleusercontent.com",
+          "client_id": "958939521579-0h36q77soihj1dst1ihi1sol5f8tivh2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyADTB0SlJzxuNMK8OrsK4dUj966HpxcAuo"
+          "current_key": "AIzaSyBD4SH5_4Py1TFyH49eSTV2T6Y3LZylVxQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "874198517739-mt8spseds6sqkpb6l9pb1f4fm5lgvuac.apps.googleusercontent.com",
+              "client_id": "958939521579-0h36q77soihj1dst1ihi1sol5f8tivh2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Controle Financeiro</string>
+    <string name="app_name">Lista de Compras</string>
     <string name="title_activity_principal">principalActivity</string>
 
     <string name="textVerde">

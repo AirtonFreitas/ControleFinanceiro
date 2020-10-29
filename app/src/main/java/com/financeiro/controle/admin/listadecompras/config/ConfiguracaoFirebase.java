@@ -1,4 +1,4 @@
-package com.financeiro.controle.admin.controlefinanceiro.config;
+package com.financeiro.controle.admin.listadecompras.config;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;

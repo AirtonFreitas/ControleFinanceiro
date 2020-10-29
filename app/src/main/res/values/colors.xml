@@ -11,9 +11,9 @@
     <color name="colorAccentDespesa">#ff706a</color>
 
     <!-- RECEITAS !-->
-    <color name="colorPrimaryReceita">#00d39e</color>
-    <color name="colorPrimaryDarkReceita">#02bc8a</color>
-    <color name="colorAccentReceita">#00d39e</color>
+    <color name="colorPrimaryReceita">#3ff4c6</color>
+    <color name="colorPrimaryDarkReceita">#19a680</color>
+    <color name="colorAccentReceita">#31ffcb</color>
 
 
 
